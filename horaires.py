@@ -1,13 +1,15 @@
 #! /usr/bin/python
 # -*- coding: utf-8 -*-
+
 import sys
 import os
 import sqlite3
 import re
-#
+
 #   Pour passer à python 3, il suffit de changer Tkinter en tkinter.
 #   On donne l'alias tk pour qu'il n'y ait rien à modifier ailleurs dans le code.
-#
+
+# Ajouter le package : sudo apt-get install python-imaging-tk
 import Tkinter as tk
 from PIL import Image, ImageTk
 
@@ -21,11 +23,11 @@ except ImportError: # py3k
 import ttk
 
 import autocompletion
-
 import calendar_test
+
 #  Il faudra rajouter des fonctions à sqlite. Elles seront importées ici. On suppose ici que le fichier s'appelle mes_fonctions.py 
 # (il peut prendre n'importe quel nom)
-#
+
 #import mes_fonctions
 
 class Horaires_tk(tk.Tk):
@@ -220,11 +222,11 @@ class Horaires_tk(tk.Tk):
         self.panel_.grid(column=2, row=0, padx=0, pady=30)
         self.panel_.image = img
 
-        """imageFile = "aeroports_img/mad.jpg"
+        imageFile = "aero.jpg"
         img = ImageTk.PhotoImage(Image.open(imageFile))
         self.panel_ = tk.Label(self.formulaire_img, image=img)
         self.panel_.grid(column=2, row=0, padx=0, pady=30)
-        self.panel_.image = img"""
+        self.panel_.image = img
 
         # Bouton d'appel au calendrier
         self.buttonCalendar = tk.Button(self.formulaire,
