@@ -6,7 +6,8 @@ Le programme sélectionne les aéroports de départ et d'arrivée en fonction de
 Vous pouvez choisir la date de votre départ.
 Le décalage horaire est respecté.
 La base de données des vols est fictive.
-La base de données des aéroports et des villes est réelle.
+La base de données des aéroports et des villes est réelle. <br />
+La base de données est SQLite.
 
 Avant de lancer le programme, ajouter le package python : <br />
     `sudo apt-get install python-imaging-tk`
